@@ -1,3 +1,6 @@
+// Big O complexity: n^2
+ //if almost sorted O(n)
+
 //Most Inefficient solution
 
 // function bubbleSort(arr) {
