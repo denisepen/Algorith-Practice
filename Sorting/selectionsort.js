@@ -8,12 +8,13 @@ function selectionSort(arr){
         lowest = j;
       }
     }
-    // if(i !== lowest) {
+    if(i !== lowest) {
       console.log(i, lowest);
       var temp = arr[i];
       arr[i] = arr[lowest];
       arr[lowest] = temp;
     }
+  }
     console.log(arr);
   }
 
