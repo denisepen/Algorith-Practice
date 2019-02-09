@@ -49,4 +49,9 @@ class LinkedList {
     }
   }
 
+  clear() {
+    // empties out the list
+    this.head = null;
+  }
+
 }
