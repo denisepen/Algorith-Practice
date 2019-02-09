@@ -6,5 +6,19 @@ class Node {
 }
 
 class LinkedList {
+  constructor () {
+    this.head = null
+  }
+
+  insertFirst(data) {
+    const node = new Node(data, this.head);
+    this.head = node;
+
+    /*
+     Above can be condensed to:
+     this.head = new Node(data, this.head)
+    */
+
+  }
 
 }
