@@ -68,9 +68,9 @@ class LinkedList {
     if(!this.head) return;
 
     if(!this.head.next) {
-      clear();
-      // or this.head = null;
-      // return;
+      // clear();
+      this.head = null;
+      return;
     };
 
     let previous = this.head;
@@ -82,10 +82,41 @@ class LinkedList {
     }
 
     previous.next = null;
-
-
-
-
   }
+
+  insertLast(data) {
+    let last = this.getLast();
+
+    if(last) {
+      // there are some existing nodes in our chain
+      last.next = new Node(data)
+    } else {
+      // the chain is empty!
+      this.head = new Node(data)
+    }
+  }
+
+  getAt(index) {
+    // not needed bc we return null if there is no node below
+    // if(!this.head) return null;
+
+    let node = this.head
+    let counter = 0;
+
+    while(node) {
+      if(counter === index) {
+        return node
+      }
+
+      counter++;
+      node = node.next
+    }
+    return null;
+  }
+}
+
+removeAt(index) {
+  let previous = this.getAt(index -1);
+
 
 }
