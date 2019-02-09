@@ -18,7 +18,16 @@ class LinkedList {
      Above can be condensed to:
      this.head = new Node(data, this.head)
     */
+  }
 
+  size() {
+    let counter = 0;
+    let node = this.head;
+
+    while (node) {
+      counter++;
+      node = node.next;
+    }
   }
 
 }
