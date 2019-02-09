@@ -37,7 +37,7 @@
 //   console.log(arr)
 // }
 
-// optimized with nowaps - if there arent anymore swaps then break out of loops
+// optimized with noswaps - if there arent anymore swaps then break out of loops
 function bubbleSort(arr) {
   var noSwaps;
   // i starts at 4

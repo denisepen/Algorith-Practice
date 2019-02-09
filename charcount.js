@@ -29,7 +29,8 @@ function countChars(str) {
     char = char.toLowerCase();
 
     if(pattern.test(char))  {
-      obj[char] = ++obj[char] || 1;
+      // obj[char] = ++obj[char] || 1;
+      result[char] = ++result[char] || 1;
     }
   }
   console.log(result)

@@ -29,4 +29,4 @@ function binarySearch (arr, value) {
   return -1
 }
 
-binarySearch([0,1,3,4, 5,7,12,22, 23], 2)
+binarySearch([-1,1,3,4, 5,7,12,22, 23], -1)
