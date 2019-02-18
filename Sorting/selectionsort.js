@@ -1,3 +1,5 @@
+// move thru array and look for min - swap min number with the first number we started with then move to nex number in the array.
+
 function selectionSort(arr){
   for (var i = 0; i< arr.length; i++) {
     // i is the position of the lowest element;
